@@ -79,10 +79,34 @@ function cylinder_volume(radius, height) {
 
 function percent(score, total) {
 
-    let percent_grade = (score / total) * 100
+    let percent_value = (score / total) * 100;
 
-    return (`${percent_grade}%`)
+    let percent_grade = Math.round(percent_value);
+
+    console.log(`${percent_grade}%`);
+
+    return percent_value;
 
 }
 
 
+function pythagorean_theorem(a, b) {
+
+    let c = Math.sqrt(a**2 + b**2);
+
+    return c;
+
+}
+
+
+function round(value, decimals) {
+
+    value = value * 10**decimals;
+
+    value = Math.round(value);
+
+    value = value / 10**decimals;
+
+    return value;
+
+}
